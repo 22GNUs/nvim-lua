@@ -35,6 +35,15 @@ end
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
+  -- Nvim tree explorer
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
   -- Set moonfly theme
   use 'bluz71/vim-moonfly-colors'
   -- Set lualine
