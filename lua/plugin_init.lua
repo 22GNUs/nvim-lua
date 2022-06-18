@@ -35,6 +35,12 @@ end
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
+  -- TreeSitter: To provide a simple and easy way to use the interface
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
   -- Nvim tree explorer
   use {
     'kyazdani42/nvim-tree.lua',
