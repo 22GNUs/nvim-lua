@@ -3,9 +3,9 @@
 -----------------------------------------------------------
 
 -- Automatically install packer
+
 local fn = vim.fn
 local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
-
 if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({
     'git',
@@ -33,11 +33,17 @@ end
 
 -- Install plugins
 return packer.startup(function(use)
-  -- Add you plugins here:
   use 'wbthomason/packer.nvim' -- packer can manage itself
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
+  -- Set moonfly theme
+  use 'bluz71/vim-moonfly-colors'
+  -- Set lualine
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
     require('packer').sync()
   end
