@@ -11,13 +11,15 @@
 | `<leader-F>` | Search by Keyword   |
 | `<leader>`   | Trigger Which key   |
 
+## Commands
+
+| Command                            | Description                  |
+| ---------------------------------- | ---------------------------- |
+| :PackerSync                        | Sync packer plugins          |
+| :WakaTimeApiKey                    | Set wakaTime api key         |
+| :TSInstall `<language_to_install>` | Install TreeSetter languages |
+
 ## Optional Dependencies
-
-Install [TreeSetter Languages](https://github.com/nvim-treesitter/nvim-treesitter)
-
-```vim
-:TSInstall <language_to_install>
-```
 
 Install [Lazygit](https://github.com/jesseduffield/lazygit)
 
