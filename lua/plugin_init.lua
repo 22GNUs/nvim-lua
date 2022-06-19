@@ -63,10 +63,12 @@ return packer.startup(function(use)
   	require("toggleterm").setup()
 	end}
 
-  -- Which key: opens a popup with suggestions to complete a key binding
-  use {"folke/which-key.nvim", config = function()
-    require("which-key").setup()
-  end}
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup()
+    end
+  }
 
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then

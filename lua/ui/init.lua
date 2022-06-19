@@ -7,4 +7,5 @@ vim.cmd [[colorscheme moonfly]]
 
 require('ui/lualine')
 require('ui/nvim-tree')
+require('ui/whichkey')
 require('ui/keymaps')
