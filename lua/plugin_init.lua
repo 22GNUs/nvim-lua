@@ -104,6 +104,9 @@ return packer.startup(function(use)
   -- Wakatime
   use 'wakatime/vim-wakatime'
 
+  -- Easily comment
+  use "numToStr/Comment.nvim"
+
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
     require('packer').sync()

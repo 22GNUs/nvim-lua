@@ -7,6 +7,7 @@
 | ------------ | ------------------- |
 | `<C-n>`      | Toggle NVIM-tree    |
 | `<C-\>`      | Toggle Terminal     |
+| `gcc`        | Toggle Comment      |
 | `<leader-f>` | Search by File name |
 | `<leader-F>` | Search by Keyword   |
 | `<leader>`   | Trigger Which key   |
