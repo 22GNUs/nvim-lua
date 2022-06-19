@@ -13,3 +13,9 @@ Install [Lazygit](https://github.com/jesseduffield/lazygit)
 ```sh
 brew install lazygit
 ```
+
+Install [rg](https://github.com/BurntSushi/ripgrep) (Support Telescope)
+
+```sh
+brew install ripgrep
+``

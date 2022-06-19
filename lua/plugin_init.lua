@@ -63,6 +63,13 @@ return packer.startup(function(use)
   	require("toggleterm").setup()
 	end}
 
+  -- Fuzzy finder
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- Which key
   use {
     "folke/which-key.nvim",
     config = function()
