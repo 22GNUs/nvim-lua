@@ -1,6 +1,17 @@
 # Nvim dotfile Repo with new lua configuration
 
-## Optional Settings
+## Keymaps
+
+👉🏻 `<C-,>` is the Leader key
+| Key          | Description         |
+| ------------ | ------------------- |
+| `<C-n>`      | Toggle NVIM-tree    |
+| `<C-\>`      | Toggle Terminal     |
+| `<leader-f>` | Search by File name |
+| `<leader-F>` | Search by Keyword   |
+| `<leader>`   | Trigger Which key   |
+
+## Optional Dependencies
 
 Install [TreeSetter Languages](https://github.com/nvim-treesitter/nvim-treesitter)
 
