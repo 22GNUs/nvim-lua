@@ -1,0 +1,11 @@
+-----------------------------------------------------------
+-- Initialize of LSP configurations
+-----------------------------------------------------------
+
+-- Check if lspconfig is enable
+local status_ok, _ = pcall(require, "lspconfig")
+if not status_ok then
+  return
+end
+
+require('cmp/lsp/configs')
