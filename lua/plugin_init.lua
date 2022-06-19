@@ -59,9 +59,7 @@ return packer.startup(function(use)
   }
 
 	-- A useful plugin to help quick toggle terminal
-	use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
-  	require("toggleterm").setup()
-	end}
+	use "akinsho/toggleterm.nvim"
 
   -- Fuzzy finder
   use {
@@ -70,12 +68,7 @@ return packer.startup(function(use)
   }
 
   -- Which key
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup()
-    end
-  }
+  use "folke/which-key.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
