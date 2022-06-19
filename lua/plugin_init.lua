@@ -58,6 +58,16 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+	-- A useful plugin to help quick toggle terminal
+	use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+  	require("toggleterm").setup()
+	end}
+
+  -- Which key: opens a popup with suggestions to complete a key binding
+  use {"folke/which-key.nvim", config = function()
+    require("which-key").setup()
+  end}
+
   -- Automatically set up configuration after cloning packer.nvim
   if packer_bootstrap then
     require('packer').sync()

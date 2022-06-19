@@ -7,3 +7,9 @@ Install [TreeSetter Languages](https://github.com/nvim-treesitter/nvim-treesitte
 ```vim
 :TSInstall <language_to_install>
 ```
+
+Install [Lazygit](https://github.com/jesseduffield/lazygit)
+
+```sh
+brew install lazygit
+```
