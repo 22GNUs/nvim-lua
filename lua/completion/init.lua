@@ -3,3 +3,4 @@
 -----------------------------------------------------------
 
 require('completion/cmp')
+require('completion.autopairs')
