@@ -16,8 +16,8 @@ lsp_installer.setup {
 	ensure_installed = servers
 }
 
-local handlers = require('cmp.lsp.handlers')
-local settingsPkg = 'cmp.lsp.settings.'
+local handlers = require('lsp.handlers')
+local settingsPkg = 'lsp.settings.'
 
 -- Setup serveres
 for _, server in pairs(servers) do

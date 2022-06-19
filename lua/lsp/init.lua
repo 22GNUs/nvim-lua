@@ -8,4 +8,4 @@ if not status_ok then
   return
 end
 
-require('cmp/lsp/configs')
+require('lsp/configs')
